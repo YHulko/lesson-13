@@ -2,29 +2,20 @@
     box-sizing: border-box;
   }
   .row1{
-    padding: 20px 20px 15px 20px; 
-    display: flex;
-    text-align: right;
-    color: black;
-    background-color: #0c4b35;
-    justify-content: flex-end ;
+   padding: 20px 20px 15px 20px; 
+   display: flex;
+   text-align: right;
+   font-size: 14px;
+   background-color: #0c4b35;
+   justify-content: flex-end ;
   }
   .row2{
     padding: 15px 0px 15px 0px; 
     display: flex;
-    
     color: green;
     background-color: #ffffff;
   }
-  
-
-  .button {
-  width: 50px;
-  height: 50px;
- 
-  }
-  
-  .arrow {
+    .arrow {
     background-image: url("icon/arrow-down-white.svg");
     background-repeat: no-repeat;
     background-size: 25px;
@@ -32,14 +23,73 @@
     background-position-y:top ;
     color: white; 
   }
+  .arrow_2 {
+    background-image: url(icon/arrow-down-black.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    color: #212529; 
+    background-position-x: 40px;
+    background-position-y:center ;
+  }
+  .arrow_3 {
+    background-image: url(icon/arrow-down-green.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-x: 50px;
+    background-position-y:top ;
+    color: #00730C; 
+  }
   .lang{
-    width: 80px;
+    width: 67px;
     margin-left: auto;
    text-align: left;
   }
   .lang a{
      text-decoration: none;
   }
- .call{
-  margin: 0px 20px ;
+ 
+ 
+ .eMail{
+width: 12%;
+margin-left: 5%;
+text-align: right;
+background-image: url(icon/email.svg);
+background-repeat: no-repeat;
  }
+ .eMail a, .call a, .lok a{color: white;}
+ .call{
+  width: 11%;
+  
+ margin-left: 5%;
+ text-align: right;
+background-image: url(icon/phone.svg);
+background-repeat: no-repeat;
+ }
+ .lok{
+  width: 18%;
+ margin-left: 5%;
+ text-align: right;
+background-image: url(icon/locations.svg);
+background-repeat: no-repeat;
+ }
+ .menu{
+  list-style-type: none;
+  display: flex;
+  
+ }
+ .menu a{
+  text-decoration: none;
+  align-items: center;
+  margin: 10px;
+  text-align: left;
+  font-size: 16px;
+  padding-right: 25px;
+  }
+  .menu li{
+    width: 140px;
+  }
+  .menu a:hover {
+    color: #00730C;}
+  .button{
+  margin-left: auto;
+  }
