@@ -171,3 +171,40 @@ font-size: 20 px;
 .Task_2_1_Text4_1{background-image: url(icon/500+.svg);}
 .Task_2_1_Text4_2{background-image: url(icon/800+.svg);}
 .Task_2_1_Text4_3{background-image: url(icon/100+.svg);}
+/*---------------------------------------------------------------task3--------------------------------------------------------------*/
+
+.row3{
+ /* background-color: #FBEEE7;*/
+}
+.Text_3_1{
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+  .Text_3_1_1{
+    color: #00730C;
+  }
+  .Text_3_2{
+  color: #676767;
+  font-size: 20px;
+  text-align: center;
+  }
+
+.block1{
+width: 17%;
+height: 360px;
+border: #00730C solid 2px;
+background-color: #00730C;
+border-radius: 10px;
+color: white;
+background-image: url(icon/T3-1.svg);
+background-repeat: no-repeat; 
+}
+.block1_text_1{
+  text-align: center; margin-top: 175px;
+}
+.block1_text_2{
+  text-align: center;
+  margin-top: 50px;
+}
