@@ -1,7 +1,49 @@
+ /*--------------------------------------------------mobile---------------------------------------------*/
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito";
+}
+.row{
+  min-width: 320px;
+    margin: 0 auto;
+}
+.row1{
+  min-width: 320px;
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c4b35;
+}
+
+   
+   .eMail {
+    display: non;
+   }
+  
+  
+
+  
+/*---------------------------------desktop----------------------------------*/
+@media (min-width: 1440px) {
 * {
     box-sizing: border-box;
   }
+  .row{
+    max-width: 1420px; margin: 0 auto;
+  }
   .row1{
+
+    max-width: 1420px;
+    font-family: "Poppins";
+    
    padding: 20px 70px 15px 70px; 
    display: flex;
    text-align: right;
@@ -14,6 +56,9 @@
     display: flex;
     color: green;
     background-color: #ffffff;
+  }
+  .row3{
+    margin: 50px 200px;
   }
     .arrow {
     background-image: url("icon/arrow-down-white.svg");
@@ -49,15 +94,21 @@
      
   }
  
- 
+.email-icon{
+  width: 25px;
+  height: 25px;
+  background-image: url(icon/email.svg);
+  background-repeat: no-repeat;
+} 
  .eMail{
 width: 170px;
-
 text-align: right;
-background-image: url(icon/email.svg);
-background-repeat: no-repeat;
+text-align: right;
+ background-image: url(icon/email.svg);
+ background-repeat: no-repeat;
  }
  .eMail a, .call a, .lok a{color: white;}
+
  .call{
   width: 150px;
   height: 20px;
@@ -99,29 +150,23 @@ background-repeat: no-repeat;
   /*----------------task2--------------------------------*/
   .row_task2{
     height: 719px;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     display: flex;
+    background: linear-gradient(to right, #83ca8a, 60%, #fbf6ee);
   }
   .task2_2{
-    /*width: 1013px;
-    height: 673px;
-    /*position:relative;*/
     margin-top: auto;
     margin-left: auto;
+    width: 50%;
   }
-  .task2_2>img{
-    /*position:absolute;*/
-    
-    
-  }
-  .task2_1{
-    width: 40%;
-    border: 2px solid green;
+   .task2_1{
+    margin:8% 0 8% 15%;
+
+    /*border: 2px solid green;*/
   }
 .Task_2_1_Text1{
 width: 220px;
 height: 20px;
-margin-left: 5%;
 text-align: right;
 background-image: url(icon/plants_sm.svg);
 background-repeat: no-repeat; 
@@ -137,7 +182,7 @@ font-size: 20 px;
   }
   .GetAQuate p{
     display: inline-block;
-    margin-left: 10px;
+    margin: 40px 10px 60px 10px;
    background-image: url(icon/right.svg);
    background-repeat: no-repeat; 
    background-position-x: right;
@@ -162,6 +207,7 @@ font-size: 20 px;
   height: 50px;
   display: inline-block;
  padding-right: 60px;
+
 }
 .Task_2_1_Text4_1 p, .Task_2_1_Text4_2 p, .Task_2_1_Text4_3 p {
   padding-left: 60px;
@@ -172,10 +218,6 @@ font-size: 20 px;
 .Task_2_1_Text4_2{background-image: url(icon/800+.svg);}
 .Task_2_1_Text4_3{background-image: url(icon/100+.svg);}
 /*---------------------------------------------------------------task3--------------------------------------------------------------*/
-
-.row3{
- /* background-color: #FBEEE7;*/
-}
 .Text_3_1{
   color: black;
   font-size: 36px;
@@ -190,21 +232,99 @@ font-size: 20 px;
   font-size: 20px;
   text-align: center;
   }
-
-.block1{
-width: 17%;
+  .conteiner{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+/*------------------------------------block1--------------------------------------------------------------*/
+.block1,.block2, .block3, .block4, .block5, .block6, .block7, .block8{
+width: 23%;
 height: 360px;
-border: #00730C solid 2px;
+box-shadow: 5px 10px 18px #888888;
 background-color: #00730C;
 border-radius: 10px;
 color: white;
-background-image: url(icon/T3-1.svg);
-background-repeat: no-repeat; 
+background-image: url(icon/T3-1.svg), url(icon/T3-1–.svg);
+background-position: 50% 10%, 50% 20%;
+background-repeat: no-repeat, no-repeat; 
 }
-.block1_text_1{
+.block1_text_1, .block2_text_1, .block3_text_1, .block4_text_1, .block5_text_1, .block6_text_1, .block7_text_1, .block8_text_1{
   text-align: center; margin-top: 175px;
+  font-size: 24px;
 }
-.block1_text_2{
+.block1_text_2,.block2_text_2,.block3_text_2,.block4_text_2, .block5_text_2,.block6_text_2,.block7_text_2,.block8_text_2{
   text-align: center;
   margin-top: 50px;
+  font-size: 16px;
+}
+/*------------------------------------block2--------------------------------------------------------------*/
+.block2, .block3, .block4, .block5, .block6, .block7, .block8{
+  box-shadow: 5px 10px 18px #888888;
+background-color: white;
+color:black;
+background-image: url(icon/T3-2.svg), url(icon/T3-2–.svg);
+  }
+    /*------------------------------------block3--------------------------------------------------------------*/  
+  .block3{
+    background-image: url(icon/T3-3.svg), url(icon/T3-3–.svg);}
+  /*-----------------------------------block4----------------------------------------------------------*/
+  .block4{
+    background-image: url(icon/T3-4.svg), url(icon/T3-4–.svg);}
+  /*-----------------------------------block5----------------------------------------------------------*/
+  .block5{
+    background-image: url(icon/T3-5.svg), url(icon/T3-5–.svg);}
+  /*-----------------------------------block6----------------------------------------------------------*/
+  .block6{
+    background-image: url(icon/T3-6.svg), url(icon/T3-6–.svg);}
+ .block7{
+  background-image: url(icon/T3-7.svg), url(icon/T3-7–.svg);}
+  .block8{
+  background-image: url(icon/T3-8.svg), url(icon/T3-8–.svg);}
+} 
+ /*-----------Homework-16---------------------------------------4block------------------------------------------*/
+ .row4{
+  display: flex;
+ }
+ .palma{
+  width: 15%;height: 850px;
+  background-image: url(icon/palma.svg);
+  background-repeat: no-repeat;
+  background-position: top 10px right -50px;
+ }
+ .blocks3{
+  width: 35%;height: 850px;
+  
+ }
+ .block_text_4{
+  width: 34%;height: 850px;
+
+ }
+ .text40{ 
+  font-size: 40px;
+margin: 80px 0 40px 0;
+}
+.text20{font-size: 20px;}
+
+
+
+.Task_4_Ball1, .Task_4_Ball2,.Task_4_Ball3, .Task_4_Ball4{
+  background-repeat: no-repeat; 
+  height: 70px;
+  display: inline-block;
+  margin-top: 60px;
+}
+.Task_4_Ball1 p, .Task_4_Ball2 p , .Task_4_Ball3 p, .Task_4_Ball4 p{
+  padding-left: 100px;
+  width: 230px;
+  margin-top: 22px; 
+  font-size: 22px;
+}
+.Task_4_Ball1{background-image: url(icon/t41.svg)};
+.Task_4_Ball2{background-image: url(icon/t42.svg)};
+.Task_4_Ball3{background-image: url(icon/t43.svg)};
+.Task_4_Ball4{background-image: url(icon/t44.svg)};
+
+.Task_4_Button{
+  
 }
