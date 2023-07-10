@@ -487,14 +487,8 @@ width: 60%;
 }
 /*----------------------------------*/
 .slider{
-position: relative;
+/*position: relative;*/
 
-}
-.slider .slick-arrow{
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10;
 }
 
 .slick-prev:before, .slick-next:before{
@@ -503,7 +497,14 @@ position: relative;
   height: 50px;
   content: '';
   background-repeat: no-repeat;
-  
+     }
+.slick-prev { position: absolute;
+ top: 1%;
+ left: 75%;
+}
+.slick-next{ position: absolute;
+  top: 1%;
+  left: 85%;
 }
 .slick-prev:before{background-image: url(icon/arrow-prev-white.svg) ;}
 .slick-next:before{background-image:url(icon/arrow-next-white.svg) ;}
